@@ -12,12 +12,22 @@
   opacity: .9;
 }
 
+.see-behind {
+  opacity: .9;
+}
+
+.clickable:hover {
+  color: blue;
+}
+
 .menu-option {
   font-size: 20px;
   font-style: oblique;
 }
 
 body {
-  background-image: url('http://www.mgthomas.co.uk/dancebands/American%20Visitors/Pictures/Southern%20Rag-a-Jazz%20Band.jpg');
-
+  background-image: url('https://i.pinimg.com/736x/70/ef/a1/70efa1134569fd8e9264fdf1ea91ade8--jazz-artists-jazz-musicians.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }

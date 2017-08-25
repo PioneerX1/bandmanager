@@ -5,7 +5,7 @@
     </div>
     <div class="panel-body">
       <div *ngFor="let member of members | async" class="thumbnail">
-        <h4 class="hover" (click)="goToDetailsPage(member)" >{{member.name}} <em> | {{member.instrument}}</em></h4>
+        <h4 class="clickable" (click)="goToDetailsPage(member)" >{{member.name}} <em> | {{member.instrument}}</em></h4>
         <div *ngIf="currentRoute === '/admin'">
           <hr>
           <app-edit-member [selectedMember]="member"></app-edit-member>
