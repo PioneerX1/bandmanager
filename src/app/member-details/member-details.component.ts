@@ -21,10 +21,12 @@ export class MemberDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.route.params.forEach((urlParameters) => {
-      this.id = urlParameters['id'];
+    this.route.params.forEach((urlParametersArray) => {
+      this.id = urlParametersArray['id'];
     });
-    this.memberToDisplay = this.memberService.getMemberById(this.id);
+    this.memberService.getMemberById(this.id).subscribe(dataLastEmittedFromObserver => {
+      this.memberToDisplay = dataLastEmittedFromObserver;
+    });
   }
 
   id: string;
