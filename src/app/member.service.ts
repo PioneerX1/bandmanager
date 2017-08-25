@@ -35,4 +35,10 @@ export class MemberService {
     });
   }
 
+  deleteMember(memberToDelete) {
+    if(confirm("Are you sure you want to remove this member from the band?")) {
+      this.members.remove(memberToDelete);
+    }
+  }
+
 }
