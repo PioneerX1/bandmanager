@@ -1,3 +1,50 @@
-<p>
-  admin works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Member to the Band</h3>
+  </div>
+
+  <div class="panel-body">
+    <div>
+      <label>Name: </label>
+      <br>
+      <input #newName>
+    </div>
+
+    <div>
+      <label>Phone: </label>
+      <br>
+      <input #newPhone>
+    </div>
+
+    <div>
+      <label>Email: </label>
+      <br>
+      <input #newEmail>
+    </div>
+
+    <div>
+      <label>Instrument: </label>
+      <br>
+      <input #newInstrument>
+    </div>
+
+    <div>
+      <label>Skills: </label>
+      <br>
+      <input #newSkills>
+    </div>
+
+    <div>
+      <label>Will You Travel Overnight for Gigs? </label>
+      <br>
+      <select #newTravel>
+        <option [value]=true> Yes </option>
+        <option [value]=false> No </option>
+      </select>
+    </div>
+
+    <button class="btn btn-success" (click)="submitNewMemberForm(newName.value, newPhone.value, newEmail.value, newInstrument.value, newSkills.value, newTravel.value); newName.value=''; newPhone.value=''; newEmail.value=''; newInstrument.value=''; newSkills.value=''; newTravel.value='';">Add Member</button>
+
+  </div>
+
+</div>
