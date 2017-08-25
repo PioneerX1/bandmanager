@@ -28,6 +28,8 @@ You will need the following things properly installed on your computer.
 * `ng serve`
 * Navigate to `localhost:4200` in your browser
 
+* Check back soon for live hosted version at https://bandmanager-94125.firebaseapp.com/
+
 ## Code Specs
 
 |Behavior - Plain English|Input|Output|
