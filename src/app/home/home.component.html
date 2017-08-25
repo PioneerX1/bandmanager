@@ -1,7 +1,7 @@
 <div class="container">
   <h2>List of Band Members: </h2>
   <hr>
-  <div *ngFor="let member of members | async" class="thumbnail">
+  <div *ngFor="let member of members | async" (click)="goToDetailsPage(member)" class="thumbnail">
     <h4>{{member.name}} <em> | {{member.instrument}}</em></h4>
   </div>
 </div>

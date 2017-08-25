@@ -15,4 +15,8 @@ export class MemberService {
     return this.members;
   }
 
+  getMemberById(id: string) {
+    return this.database.object('/members/' + id);
+  }
+
 }
