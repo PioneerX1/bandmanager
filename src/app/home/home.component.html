@@ -1,11 +1,16 @@
 <div class="container">
-  <h2>List of Band Members: </h2>
-  <hr>
-  <div *ngFor="let member of members | async" class="thumbnail">
-    <h4 (click)="goToDetailsPage(member)" >{{member.name}} <em> | {{member.instrument}}</em></h4>
-    <div *ngIf="currentRoute === '/admin'">
-      <hr>
-      <app-edit-member [selectedMember]="member"></app-edit-member>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3>List of Band Members: </h3>
+    </div>
+    <div class="panel-body">
+      <div *ngFor="let member of members | async" class="thumbnail">
+        <h4 class="hover" (click)="goToDetailsPage(member)" >{{member.name}} <em> | {{member.instrument}}</em></h4>
+        <div *ngIf="currentRoute === '/admin'">
+          <hr>
+          <app-edit-member [selectedMember]="member"></app-edit-member>
+        </div>
+      </div>
     </div>
   </div>
 </div>

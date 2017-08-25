@@ -7,3 +7,17 @@
   background-color: #f5f5f5;
   padding: 15px;
 }
+
+.jumbotron {
+  opacity: .9;
+}
+
+.menu-option {
+  font-size: 20px;
+  font-style: oblique;
+}
+
+body {
+  background-image: url('http://www.mgthomas.co.uk/dancebands/American%20Visitors/Pictures/Southern%20Rag-a-Jazz%20Band.jpg');
+
+}
