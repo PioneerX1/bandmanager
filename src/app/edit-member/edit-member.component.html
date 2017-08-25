@@ -21,8 +21,10 @@
 <br>
 
 <label>Can Travel For Overnight Gigs? </label>
-<input type="radio" [(ngModel)]="selectedMember.travel" [value]=true>Yes
-<input type="radio" [(ngModel)]="selectedMember.travel" [value]=false>No
+<select [(ngModel)]="selectedMember.travel">
+  <option [value]=true> Yes </option>
+  <option [value]=false> No </option>
+</select>
 <br><br>
 
 <button class="btn btn-info" (click)="beginUpdatingMember(selectedMember)">Update Member</button>

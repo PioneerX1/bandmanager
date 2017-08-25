@@ -15,6 +15,18 @@ export class MemberService {
     return this.members;
   }
 
+  // getMembersWhoCanTravel() {
+  //   var travelMembers: Member[] = [];
+  //   for(var i = 0; i < this.members.length; i++)
+  //
+  //   this.members.forEach(member : this.members) {
+  //     if(member.travel === true) {
+  //       travelMembers.push(member);
+  //     }
+  //   }
+  //   return travelMembers;
+  // }
+
   getMemberById(id: string) {
     return this.database.object('/members/' + id);
   }
