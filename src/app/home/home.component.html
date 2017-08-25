@@ -1,7 +1,12 @@
 <div class="container">
   <h2>List of Band Members: </h2>
   <hr>
-  <div *ngFor="let member of members | async" (click)="goToDetailsPage(member)" class="thumbnail">
-    <h4>{{member.name}} <em> | {{member.instrument}}</em></h4>
+  <div *ngFor="let member of members | async" class="thumbnail">
+    <h4 (click)="goToDetailsPage(member)" >{{member.name}} <em> | {{member.instrument}}</em></h4>
+    <div *ngIf="currentRoute === '/admin'">
+      {{member.skills}}
+      <hr>
+      <app-edit-member [selectedMember]="member"></app-edit-member>
+    </div>
   </div>
 </div>
