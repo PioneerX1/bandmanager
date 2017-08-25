@@ -1,3 +1,7 @@
-<p>
-  home works!
-</p>
+<div class="container">
+  <h2>List of Band Members: </h2>
+  <hr>
+  <div *ngFor="let member of members | async" class="thumbnail">
+    <h4>{{member.name}} <em> | {{member.instrument}}</em></h4>
+  </div>
+</div>
