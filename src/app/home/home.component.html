@@ -3,8 +3,14 @@
     <div class="panel-heading">
       <h3>List of Band Members: </h3>
     </div>
+
+    <select (change)="onChange($event.target.value)">
+      <option value="allMembers" selected="selected">All Members</option>
+      <option value="overnightTravel">Only Members Who Can Travel Overnight</option>
+    </select>
+
     <div class="panel-body">
-      <div *ngFor="let member of members | async" class="thumbnail">
+      <div *ngFor="let member of members | async | travel:filterByTravel" class="thumbnail">
         <h4 class="clickable" (click)="goToDetailsPage(member)" >{{member.name}} <em> | {{member.instrument}}</em></h4>
         <div *ngIf="currentRoute === '/admin'">
           <hr>
