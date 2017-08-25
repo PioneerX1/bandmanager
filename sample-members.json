@@ -1,0 +1,45 @@
+{ "members": [{
+    "name": "Guiseppe the Face",
+    "phone": "301-343-8848",
+    "email": "theface@facemail.com",
+    "instrument": "trumpet",
+    "skills": "arranging",
+    "travel": true
+  }, {
+    "name": "Sam Smooth",
+    "phone": "206-232-1241",
+    "email": "samsmooth@gmail.com",
+    "instrument": "alto saxophone",
+    "skills": "lead and soloing",
+    "travel": true
+  }, {
+    "name": "Jonny Good",
+    "phone": "206-393-4442",
+    "email": "jbg@hotmail.com",
+    "instrument": "guitar",
+    "skills": "original composition",
+    "travel": true
+  }, {
+    "name": "Big Walter",
+    "phone": "404-222-7676",
+    "email": "walterdoesthewaltz@whatmail.com",
+    "instrument": "double bass",
+    "skills": "markeing",
+    "travel": false
+  }, {
+    "name": "Leroy Jenkins",
+    "phone": "303-454-1111",
+    "email": "leroysocoy@justaboy.com",
+    "instrument": "drums",
+    "skills": "passing the tip jar",
+    "travel": true
+  }, {
+    "name": "Laughing Larry",
+    "phone": "872-213-7249",
+    "email": "larrylaughsn@hotmail.com",
+    "instrument": "trumpet",
+    "skills": "trombone",
+    "travel": false
+  }
+]  
+}
