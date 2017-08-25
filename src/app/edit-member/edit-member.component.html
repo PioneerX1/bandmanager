@@ -4,5 +4,25 @@
 <input [(ngModel)]="selectedMember.name">
 <br>
 
+<label>Member Phone: </label>
+<input [(ngModel)]="selectedMember.phone">
+<br>
 
-<button (click)="beginUpdatingMember(selectedMember)">Update</button>
+<label>Member Email: </label>
+<input [(ngModel)]="selectedMember.email">
+<br>
+
+<label>Member Instrument: </label>
+<input [(ngModel)]="selectedMember.instrument">
+<br>
+
+<label>Member Skills: </label>
+<input [(ngModel)]="selectedMember.skills">
+<br>
+
+<label>Can Travel For Overnight Gigs? </label>
+<input type="radio" [(ngModel)]="selectedMember.travel" [value]=true>Yes
+<input type="radio" [(ngModel)]="selectedMember.travel" [value]=false>No
+<br><br>
+
+<button class="btn btn-info" (click)="beginUpdatingMember(selectedMember)">Update Member</button>

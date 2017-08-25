@@ -4,7 +4,6 @@
   <div *ngFor="let member of members | async" class="thumbnail">
     <h4 (click)="goToDetailsPage(member)" >{{member.name}} <em> | {{member.instrument}}</em></h4>
     <div *ngIf="currentRoute === '/admin'">
-      {{member.skills}}
       <hr>
       <app-edit-member [selectedMember]="member"></app-edit-member>
     </div>
